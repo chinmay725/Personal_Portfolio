@@ -47,7 +47,7 @@ function Loader({ isVisible, onComplete }) {
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: 200 }}
-          transition={{ duration: 3, ease: "easeInOut" }}
+          transition={{ duration: 2.5, ease: "easeInOut" }}
           className="h-1 bg-gradient-to-r from-primary-indigo to-secondary-cyan rounded-full mb-8"
         />
 

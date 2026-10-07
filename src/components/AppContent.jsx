@@ -19,14 +19,14 @@ function AppContent() {
   const [showLoader, setShowLoader] = useState(true)
 
   useEffect(() => {
-    // Show loader for 3 seconds
+    // Show loader for 2.5 seconds
     const timer = setTimeout(() => {
       setIsLoading(false)
       // Hide loader after exit animation completes
       setTimeout(() => {
         setShowLoader(false)
       }, 500)
-    }, 3000)
+    }, 2500)
     
     return () => clearTimeout(timer)
   }, [])
