@@ -34,7 +34,7 @@ function Loader({ isVisible, onComplete }) {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <img 
-              src="/cd-script.png" 
+              src="/loader-logo.png" 
               alt="Chinmay Deshmukh Logo"
               className="w-16 h-auto"
             />
