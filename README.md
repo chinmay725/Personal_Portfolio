@@ -47,79 +47,16 @@ A premium, AI-powered developer portfolio built with React.js, Vite, Tailwind CS
    npm install
    ```
 
-3. **Set up environment variables**
-   
-   Copy `.env.example` to `.env`:
+## 🚀 Running the Application
+
+1. **Start development server**
    ```bash
-   cp .env.example .env
-   ```
-   
-   Edit `.env` and add your credentials:
-   ```env
-   # EmailJS Configuration
-   VITE_EMAILJS_SERVICE_ID=your_service_id
-   VITE_EMAILJS_TEMPLATE_ID=your_template_id
-   VITE_EMAILJS_PUBLIC_KEY=your_public_key
-
-   # AI Assistant Configuration (Optional)
-   VITE_AI_API_KEY=your_ai_api_key
-   VITE_AI_API_ENDPOINT=your_ai_endpoint
-   ```
-
-## 📧 EmailJS Setup
-
-To enable the contact form, you need to configure EmailJS:
-
-1. **Sign up for EmailJS**
-   - Go to [https://www.emailjs.com/](https://www.emailjs.com/)
-   - Create a free account
-
-2. **Create an Email Service**
-   - Go to Email Services → Add New Service
-   - Choose your email provider (Gmail, Outlook, etc.)
-   - Follow the authentication steps
-   - Copy the **Service ID**
-
-3. **Create an Email Template**
-   - Go to Email Templates → Create New Template
-   - Set up your template with these variables:
-     - `{{name}}` - Sender's name
-     - `{{email}}` - Sender's email (set as Reply-To)
-     - `{{subject}}` - Email subject
-     - `{{message}}` - Email message
-   - **Important**: In the template settings, set the Reply-To field to `{{email}}`
-   - Copy the **Template ID**
-
-4. **Get Your Public Key**
-   - Go to Account → General
-   - Copy your **Public Key**
-
-5. **Update Environment Variables**
-   - Add the credentials to your `.env` file:
-     ```env
-     VITE_EMAILJS_SERVICE_ID=your_service_id
-     VITE_EMAILJS_TEMPLATE_ID=your_template_id
-     VITE_EMAILJS_PUBLIC_KEY=your_public_key
-     ```
-
-6. **Restart the Development Server**
-   ```bash
-   # Stop the server (Ctrl+C)
    npm run dev
    ```
 
-## 🤖 AI Assistant Setup (Optional)
-
-The AI assistant currently runs in demo mode with keyword matching. To enable full AI capabilities:
-
-1. Choose an AI API provider (e.g., OpenAI, Anthropic, etc.)
-2. Get your API key and endpoint
-3. Add to `.env`:
-   ```env
-   VITE_AI_API_KEY=your_api_key
-   VITE_AI_API_ENDPOINT=your_api_endpoint
-   ```
-4. Update `src/components/AIAssistant.jsx` to make actual API calls
+2. **Open in browser**
+   - The app will open automatically at `http://localhost:3000`
+   - Or navigate manually to the URL shown in terminal
 
 ## 🎨 Customization
 
@@ -139,17 +76,6 @@ Edit `tailwind.config.js` to customize the color palette.
 ### Update Fonts
 
 Edit `src/index.css` to change fonts.
-
-## 🚀 Running the Application
-
-1. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-2. **Open in browser**
-   - The app will open automatically at `http://localhost:3000`
-   - Or navigate manually to the URL shown in terminal
 
 ## 📦 Building for Production
 
@@ -232,14 +158,12 @@ Portfolio/
 ### Vercel
 1. Push code to GitHub
 2. Import project in Vercel
-3. Add environment variables in Vercel dashboard
-4. Deploy
+3. Deploy
 
 ### Netlify
 1. Push code to GitHub
 2. Import project in Netlify
-3. Add environment variables in Netlify dashboard
-4. Deploy
+3. Deploy
 
 ### Other Platforms
 Build the project and deploy the `dist/` folder to any static hosting service.
