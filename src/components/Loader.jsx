@@ -33,11 +33,13 @@ function Loader({ isVisible, onComplete }) {
             className="absolute inset-2 rounded-full border-4 border-secondary-cyan/30"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <img 
-              src="/loader-logo.png" 
-              alt="Chinmay Deshmukh Logo"
-              className="w-16 h-auto"
-            />
+            <div className="w-16 h-16 rounded-full overflow-hidden">
+              <img 
+                src="/loader-logo.png" 
+                alt="Chinmay Deshmukh Logo"
+                className="w-full h-full object-cover rounded-full block"
+              />
+            </div>
           </div>
         </motion.div>
 
