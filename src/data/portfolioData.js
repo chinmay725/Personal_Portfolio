@@ -3,7 +3,7 @@ export const portfolioData = {
   title: "Frontend Developer | Full-Stack Developer",
   location: "Pune, Maharashtra, India",
   email: "deshmukhchinmay300@gmail.com",
-  linkedin: "www.linkedin.com/in/chinmay-deshmukh",
+  linkedin: "www.linkedin.com/in/chinmay-deshmukh-",
   github: "github.com/chinmay725",
   
   education: {
